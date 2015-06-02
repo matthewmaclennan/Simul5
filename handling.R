@@ -7,6 +7,6 @@
 #Replace spaces in the filenames with underscores so that assign() will work. The spaces are considered illegal name characters
  filenames<-gsub(" ","_",filenames)
   for(i in 1:length(files)){
-    assign(filename[i],read.csv(files[i]))
+    assign(filename[i],as.matrix(read.csv(files[i])))
   }
   
