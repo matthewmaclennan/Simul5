@@ -11,5 +11,10 @@
   }
   
 #Loading all csv files in a directory. Pattern argument is regex, recursive=T searches through all folders in Export Profiles
-list.files("C:\\Users\\ChenLab\\Documents\\Simul 5 Complex - Release 2011\\Export Profiles\\",
+files<-list.files("C:\\Users\\ChenLab\\Documents\\Simul 5 Complex - Release 2011\\Export Profiles\\",
 full.name=T,recursive=T,pattern="sim.*.csv")
+#
+filenames<-list.files("C:\\Users\\ChenLab\\Documents\\Simul 5 Complex - Release 2011\\Export Profiles\\",
+full.name=F,recursive=T,pattern="sim.*.csv")
+#
+filenames<-gsub("[ /]","_",filenames)
