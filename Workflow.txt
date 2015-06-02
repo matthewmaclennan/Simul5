@@ -1,0 +1,14 @@
+Workflow
+
+Simul5 Complex needs to take snapshots of the separation
+
+Autoit:
+1. export *.csv file
+2. Continue run
+3. Repeat step 1.
+
+R 
+1. Line up the csv snapshots into a matrix (can same image() of matrix to bitmap or jpeg)
+2. Compute the 1st and 2nd derivatives to find break points between fronts and plateaus for determining peak shapes
+3. Compute the centre of mass for peaks and regress on their capillary position as a function of time.
+4. Obtain capillary motion equation; obtain peak shape change equation; obtain all equations for a run
