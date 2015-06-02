@@ -10,3 +10,6 @@
     assign(filename[i],as.matrix(read.csv(files[i])))
   }
   
+#Loading all csv files in a directory. Pattern argument is regex, recursive=T searches through all folders in Export Profiles
+list.files("C:\\Users\\ChenLab\\Documents\\Simul 5 Complex - Release 2011\\Export Profiles\\",
+full.name=T,recursive=T,pattern="sim.*.csv")
